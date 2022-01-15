@@ -4367,31 +4367,44 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
 
 .card-planes{
 
-  /* background: red; */
+  background: #F2F8FD;
   border-style: none;
-  -webkit-box-shadow: 0px 0px 34px -2px rgba(0,0,0,0.1); 
-  box-shadow: 0px 0px 34px -2px rgba(0,0,0,0.1);
+  /* -webkit-box-shadow: 0px 0px 34px -2px rgba(0,0,0,0.1); 
+  box-shadow: 0px 0px 34px -2px rgba(0,0,0,0.1); */
   border-radius: 10px;
   min-height: 500px;
 }
-.card-planes .barra{
+
+.card-planes.activo{
+    /* background: rgb(30,177,231);
+    background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 100%); */
+    background: #0073a8;
+}
+
+/* .card-planes .barra{
   width: 100%;
   height: 20px;
   background: rgb(30,177,231);
     background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 100%);
   border-radius: 10px 10px 0 0;
-}
+} */
 
 .card-planes .card-header h5 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   margin: 0;
   padding: 0;
   /* background: red; */
 }
 
+.card-planes.activo h5,
+.card-planes.activo p,
+.card-planes.activo span{
+  color: #fff !important;
+}
+
 .card-planes .card-header p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0 !important;
   padding: 0 !important;
@@ -4420,10 +4433,15 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
   border-top: 1px solid #7b7b7b;
 }
 
+.card-planes.activo  .card-body .line{
+  border-color: #fff;
+}
 
 .card-activo::before{
    content: 'Recomendado';
-   background: linear-gradient(90deg,#5bd463 0,#bcf298);
+   /* background: rgb(30,177,231);
+   background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 100%); */
+   background: #0073a8;
    display: block;
    width: 200px;
    height: 100px;
@@ -4439,19 +4457,45 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
 
 
 .list-planes li{
-  font-size: 0.9rem;
-  margin: 5px 0;
+  font-size: 1rem;
+  /* margin: 15px 0; */
+  padding: 5% 3%;
   display: flex;
+  /* background-color: #FCFCFC;
+  border-radius: 10px; */
+  display: grid;
+  grid-template-columns: 50px 1fr;
 
 }
 
 .list-planes li span{
   margin-right: 7px;
-  color: #5bd463 ;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #0073a8;
+  /* background: rgb(30,177,231);
+  background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 100%); */
+  
 }
 
 .list-planes li div{
   
+}
+
+.card-planes.activo .list-planes li span{
+  background: #fff;
+  /* color: rgb(30,177,231) !important; */
+  color: #0073a8 !important;
+}
+
+.card-planes.activo .list-planes{
+  color: #fff;
 }
 
 /* contacto */
@@ -4470,7 +4514,7 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
 }
 
 .home9 .contact .info-box{
-  background: #e7e7e8 !important;
+  background: #F2F8FD !important;
   display: block;
   /* background: red; */
 }
