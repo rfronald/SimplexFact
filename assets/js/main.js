@@ -15,6 +15,31 @@ $(function ($) {
         });
 
 
+        $('.hero-area a').on('click', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top -80
+            }, 1000);
+            event.preventDefault();
+        });
+
+        $('.banner-2 a').on('click', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top -80
+            }, 1000);
+            event.preventDefault();
+        });
+
+        $('.planes a').on('click', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top -80
+            }, 1000);
+            event.preventDefault();
+        });
+
+
         // Navbar collapse on click
         $('.nav-link').on('click', function () {
             $('.navbar-collapse').collapse('hide');
@@ -55,10 +80,10 @@ $(function ($) {
         });
 
     //scrollspy menu
-    $body.scrollspy({
-        target: '#mainmenu',
-        offset: 100
-    });
+    // $body.scrollspy({
+    //     target: '#mainmenu',
+    //     offset: 1000
+    // });
     //   magnific popup activation
     $('.video-play-btn').magnificPopup({
         type: 'video'

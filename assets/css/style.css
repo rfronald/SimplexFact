@@ -6,6 +6,8 @@
 	Table of Css Content
 	------- *** -------
 
+
+
 --------------------------
 ** @typography
 --------------------------
@@ -55,6 +57,9 @@
 /*---------------------------
 ** Global style
 ---------------------------*/
+
+
+
 .mybtn1 {
   font-size: 14px;
   text-transform: uppercase;
@@ -3749,7 +3754,7 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
   width: 100%;
 }
 .home9 .hero-area .left-content .content .title {
-  font-size: 52px;
+  font-size: 2.8rem;
   line-height: 60px;
   color: #242424;
   font-weight: 700;
@@ -4373,6 +4378,13 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
   box-shadow: 0px 0px 34px -2px rgba(0,0,0,0.1); */
   border-radius: 10px;
   min-height: 500px;
+  display: block;
+}
+
+.card-activo {
+      /* background: rgb(30,177,231);
+    background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 100%); */
+    background: #0073a8;
 }
 
 .card-planes.activo{
@@ -4393,10 +4405,53 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
   font-size: 1.8rem;
   font-weight: 500;
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
   /* background: red; */
+
 }
 
+.card-planes .card-header{
+  background-color: #FCFCFC ;    
+  -webkit-box-shadow: 19px 23px 22px -5px rgb(0 0 0 / 10%);
+  box-shadow: 19px 23px 22px -5px rgb(0 0 0 / 10%);
+  min-height: 150px;
+  position: relative;
+}
+
+
+.card-planes.activo .card-header {
+ /* background: rgb(30,177,231);
+    background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 100%); */
+    background: #0073a8 ;
+}
+
+.card-planes.activo .card-header::after {
+  background: #0073a8 ;
+}
+
+.card-planes .card-header::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 20px;
+  background-color: #FCFCFC;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(180deg);
+
+}
+
+.card-planes .card-header a.mybtn-bg{
+  color: #fff !important;
+}
+
+.card-activo h5,
+.card-activo p,
+.card-activo span,
 .card-planes.activo h5,
 .card-planes.activo p,
 .card-planes.activo span{
@@ -4410,20 +4465,53 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
   padding: 0 !important;
   /* background: blue; */
 }
-.card-planes .card-header span{
+.card-planes .card-header span.info{
   color: #7b7b7b;
   font-size: 0.8rem;
 }
 
+.card-planes .card-header span.icon{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #FCFCFC;
+  /* background-color: red; */
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-box-shadow: 15px 18px 17px -2px rgba(0,0,0,0.08); 
+  box-shadow: 15px 18px 17px -2px rgba(0,0,0,0.08);
+
+}
+
+.card-planes .card-header span.icon img{
+  height: 40px;
+}
+
+
+.card-planes .card-header a{
+  font-size: 0.8rem;
+}
+
+
 .card-planes .card-header{
   border-style: none;
-  background: transparent;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px ;
 }
 
 .card-planes .card-footer{
   border-style: none;
   background: transparent;
+}
+
+.card-planes .card-body{
+  padding: 10px 1.25rem;
 }
 
 .card-planes .card-body .line{
@@ -4433,15 +4521,16 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
   border-top: 1px solid #7b7b7b;
 }
 
+.card-activo  .card-body .line,
 .card-planes.activo  .card-body .line{
   border-color: #fff;
 }
 
 .card-activo::before{
    content: 'Recomendado';
-   /* background: rgb(30,177,231);
-   background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 100%); */
-   background: #0073a8;
+   background: rgb(30,177,231);
+   background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 100%);
+   /* background: #0073a8; */
    display: block;
    width: 200px;
    height: 100px;
@@ -4457,23 +4546,24 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
 
 
 .list-planes li{
-  font-size: 1rem;
+  font-size: 0.9rem;
   /* margin: 15px 0; */
-  padding: 5% 3%;
+  /* padding: 5% 3%; */
   display: flex;
   /* background-color: #FCFCFC;
   border-radius: 10px; */
   display: grid;
-  grid-template-columns: 50px 1fr;
+  margin: 10px 0;
+  grid-template-columns: 30px 1fr;
 
 }
 
 .list-planes li span{
-  margin-right: 7px;
-  font-size: 0.7rem;
-  border-radius: 5px;
-  width: 20px;
-  height: 20px;
+  font-size: 0.6rem;
+  border-radius: 10px;
+  padding-top: 0.5px;
+  width: 17px;
+  height: 17px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4488,12 +4578,14 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
   
 }
 
+.card-activo .list-planes li span,
 .card-planes.activo .list-planes li span{
   background: #fff;
   /* color: rgb(30,177,231) !important; */
   color: #0073a8 !important;
 }
 
+.card-activo .list-planes,
 .card-planes.activo .list-planes{
   color: #fff;
 }
