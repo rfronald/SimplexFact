@@ -3743,9 +3743,12 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
   position: relative;
   overflow: hidden;
   padding: 100px 0px 60px;
-  background: #E8E8E8;
+  /* background: #E8E8E8;
   background: rgb(231,231,232);
-  background: linear-gradient(138deg, rgba(231,231,232,1) 45%, rgba(113,112,112,1) 100%);
+  background: linear-gradient(138deg, rgba(231,231,232,1) 45%, rgba(113,112,112,1) 100%); */
+  background: rgb(246,244,245);
+  background: linear-gradient(138deg, rgba(246,244,245,1) 0%, rgba(200,200,200,1) 100%);
+
 }
 .home9 .hero-area .shape {
   position: absolute;
@@ -4411,7 +4414,8 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
 }
 
 .card-planes .card-header{
-  background-color: #FCFCFC ;    
+  /* background-color: #FCFCFC ;     */
+  background: #F2F8FD;
   -webkit-box-shadow: 19px 23px 22px -5px rgb(0 0 0 / 10%);
   box-shadow: 19px 23px 22px -5px rgb(0 0 0 / 10%);
   min-height: 150px;
@@ -4434,7 +4438,8 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
   display: block;
   width: 50px;
   height: 20px;
-  background-color: #FCFCFC;
+  /* background-color: #FCFCFC; */
+  background: #F2F8FD;
   position: absolute;
   bottom: -20px;
   left: 0;
@@ -4474,8 +4479,9 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #FCFCFC;
-  /* background-color: red; */
+  /* background-color: #FCFCFC; */
+  /* background: #0073a8 ; */
+  background: #F2F8FD;
   position: absolute;
   top: -40px;
   left: 0;
@@ -4492,6 +4498,7 @@ background: linear-gradient(138deg, rgba(30,177,231,1) 0%, rgba(0,114,170,1) 46%
 
 .card-planes .card-header span.icon img{
   height: 40px;
+
 }
 
 
